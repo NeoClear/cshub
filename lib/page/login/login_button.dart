@@ -30,7 +30,7 @@ class LoginButton extends StatelessWidget {
       height: 48,
       color: isBlank ? Colors.white : color,
       child: Container(
-        constraints: BoxConstraints(maxWidth: 200),
+        constraints: BoxConstraints(maxWidth: 240),
         child: Center(
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -47,7 +47,7 @@ class LoginButton extends StatelessWidget {
                 style: TextStyle(
                   color: isBlank ? color : Colors.white,
                   fontFamily: 'amazon',
-                  fontSize: 15,
+                  fontSize: 18,
                   backgroundColor: Color.fromRGBO(0, 0, 0, 0),
                 ),
               ),
