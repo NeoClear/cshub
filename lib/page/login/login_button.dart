@@ -46,7 +46,8 @@ class LoginButton extends StatelessWidget {
                 text,
                 style: TextStyle(
                   color: isBlank ? color : Colors.white,
-                  fontSize: 14,
+                  fontFamily: 'amazon',
+                  fontSize: 15,
                   backgroundColor: Color.fromRGBO(0, 0, 0, 0),
                 ),
               ),

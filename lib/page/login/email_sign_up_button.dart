@@ -7,7 +7,7 @@ class EmailSignUpButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return LoginButton(
       iconData: Icons.email_outlined,
-      color: Colors.black,
+      color: Color(0xff646ecb),
       text: 'Sign up with Email',
       onPressed: () {},
       isBlank: true,
