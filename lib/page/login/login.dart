@@ -19,23 +19,46 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             // Show logo in sign in page
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12)
+            ClipPath(
+              clipper: LogoClipper(),
+              child: Container(
+                height: 400,
+                decoration: BoxDecoration(
+                    // borderRadius: BorderRadius.circular(25),
+                    image: DecorationImage(
+                        image: AssetImage('asset/logo/logo.png'),
+                        fit: BoxFit.fill)),
               ),
-              child: Image.asset('asset/logo/logo.png'),
             ),
-            Container(height: 0),
+            // Container(height: 0),
             // Following are login methods (include sign up button)
             FacebookLoginButton(),
             GoogleLoginButton(),
             MicrosoftLoginButton(),
             EmailLoginButton(),
             EmailSignUpButton(),
-            Container(height: 5)
+            Container(height: 0)
           ],
         ),
       ),
     );
+  }
+}
+
+class LogoClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    var path = Path();
+    path.lineTo(0, size.height - 60);
+    path.quadraticBezierTo(
+        size.width / 2, size.height, size.width, size.height - 60);
+    path.lineTo(size.width, 0);
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
+    return false;
   }
 }
