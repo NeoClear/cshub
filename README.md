@@ -1,16 +1,12 @@
-# cshub
+<p align="center">
+  <a href="https://github.com/NeoClear/cshub">
+  <img src="asset/logo/icon.png" height="120" alt="CSHub">
+</p>
 
-A new Flutter project.
+<p align="center">
+CSHub is a mobile app built for the purpose to connect computer science students. Creative cs students could use this app to communicate and answer challenging quizzes made by their friends. They could also compete in games in real time
+</p>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+- [Flutter](https://flutter.dev/)
+- [Firebase](https://firebase.google.com/)
